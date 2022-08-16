@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/esm/Row';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -19,13 +20,16 @@ const NavigationBar = () => {
                     />{' '}
                     Ray Ban
                 </Navbar.Brand>
-                <Nav fill='true' className='row justify-content-around'>
-                    <Nav.Item href="#sun_glasses" class="col-4" style={{ textAlign: 'center' }}>Sun Glasses</Nav.Item>
-                    <Nav.Item href="#eye_glasses" class="col-4" style={{ textAlign: 'center' }}>Eye Glasses</Nav.Item>
-                    <Nav.Item href="#eye_glasses" class="col-4" style={{ textAlign: 'center' }}>Prescription</Nav.Item>
-                    <Nav.Item href="#eye_glasses" class="col-4" style={{ textAlign: 'center' }}>Ray-Ban Stories</Nav.Item>
-                    <Nav.Item href="#eye_glasses" class="col-4" style={{ textAlign: 'center' }}>Ray-Ban Stories</Nav.Item>
-                </Nav>
+                <Container>
+                    <Row className='row justify-content-center'>
+                        <Nav fill='true' >
+                            <Nav.Link href="#sun_glasses" style={{ color: '#FFFFFF' }}>Sun Glasses</Nav.Link>
+                            <Nav.Link href="#eye_glasses" style={{ color: '#FFFFFF' }}>Eye Glasses</Nav.Link>
+                            <Nav.Link href="#eye_glasses" style={{ color: '#FFFFFF' }}>Prescription</Nav.Link>
+                            <Nav.Link href="#eye_glasses" style={{ color: '#FFFFFF' }}>Ray-Ban Stories</Nav.Link>
+                        </Nav>
+                    </Row>
+                </Container>
             </Navbar.Collapse >
 
         </Navbar>

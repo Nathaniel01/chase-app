@@ -1,11 +1,20 @@
 # Getting Started 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## WireFraming with Figma
+The basic design for the Landing page of the website can be seen with this [Figma link](https://www.figma.com/file/v9ymQvLCR3DQCaZaspzncv/RayBan?node-id=0%3A1).\
+
 ## Running the project
 
-To run this project on your local host, clone the project, and run 'npm install' to install all dependencies.\
+To run this project on your local host, clone the project, cd into the 'client' folder and run 'npm install' to install all dependencies.\
 Afterwards. Run 'npm start' in the project directory to start the local server.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.\
+
+
+Then, in a different terminal, cd into the 'server' folder and run 'npm install' to install all dependecies.\
+Afterwards, run 'nodemon server.js' to start the server.\
+Then, open [http://localhost:3001/test](http://localhost:3001/test) to view the server status.\
+Please remember to keep both the 'client terminal' and the 'server' terminal open.\
 
 
 

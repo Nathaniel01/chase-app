@@ -10,8 +10,11 @@ const Signup = () => {
 
     return (
         <div>
-            <Nav>
-                <p onClick={() => setShowModal(true)} style={{ textAlign: 'center' }}>50% off easter sales. <span style={{ cursor: 'pointer', color: 'red' }}>Click here</span> to register now</p>
+            <Nav style={{ background: '#AD9ECE' }}>
+                <p onClick={() => setShowModal(true)}
+                    style={{ textAlign: 'center', fontWeight: '600', fontSize: '24px', color: 'white' }}>
+                    50% off easter sales.
+                    <span style={{ cursor: 'pointer', color: 'red' }}>Click here</span> to register now</p>
             </Nav>
             <Modal show={showModal} onHide={() => setShowModal(false)}>
                 <Modal.Header closeButton>
