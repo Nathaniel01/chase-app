@@ -20,8 +20,6 @@ export const UserForm = () => {
 
         }
         setValidated(true);
-
-        console.log('first_name: ', form.first_name.value)
         const response = {
             first_name: form.first_name.value,
             last_name: form.last_name.value,
@@ -50,7 +48,7 @@ export const UserForm = () => {
     return (
         <Form noValidate validated={validated} onSubmit={handleSubmit}>
             <Row className="mb-3">
-                <Form.Group as={Col} md="3" controlId="first_name">
+                <Form.Group md="3" controlId="first_name">
                     <Form.Label>First name</Form.Label>
                     <Form.Control
                         required
@@ -58,7 +56,7 @@ export const UserForm = () => {
                         placeholder="First name"
                     />
                 </Form.Group>
-                <Form.Group as={Col} md="3" controlId="last_name">
+                <Form.Group md="3" controlId="last_name">
                     <Form.Label>Last name</Form.Label>
                     <Form.Control
                         required
@@ -66,7 +64,7 @@ export const UserForm = () => {
                         placeholder="Last name"
                     />
                 </Form.Group>
-                <Form.Group as={Col} md="3" controlId="email">
+                <Form.Group md="3" controlId="email">
                     <Form.Label>Email</Form.Label>
                     <InputGroup hasValidation>
                         <Form.Control
@@ -81,21 +79,21 @@ export const UserForm = () => {
                 </Form.Group>
             </Row>
             <Row className="mb-3">
-                <Form.Group as={Col} md="3" controlId="city">
+                <Form.Group md="3" controlId="city">
                     <Form.Label>City</Form.Label>
                     <Form.Control type="text" placeholder="City" required />
                     <Form.Control.Feedback type="invalid">
                         Please provide a valid city.
                     </Form.Control.Feedback>
                 </Form.Group>
-                <Form.Group as={Col} md="3" controlId="state">
+                <Form.Group md="3" controlId="state">
                     <Form.Label>State</Form.Label>
                     <Form.Control type="text" placeholder="State" required />
                     <Form.Control.Feedback type="invalid">
                         Please provide a valid state.
                     </Form.Control.Feedback>
                 </Form.Group>
-                <Form.Group as={Col} md="3" controlId="zip">
+                <Form.Group md="3" controlId="zip">
                     <Form.Label>Zip</Form.Label>
                     <Form.Control type="text" placeholder="Zip" required />
                     <Form.Control.Feedback type="invalid">
@@ -104,7 +102,7 @@ export const UserForm = () => {
                 </Form.Group>
             </Row>
             <Row className="mb-3">
-                <Form.Group as={Col} md="3" controlId="collection">
+                <Form.Group md="3" controlId="collection">
                     <Form.Label>Wanted RayBan Collection</Form.Label>
                     <Form.Control type="text" placeholder="e.g. Hexagonal Sunglasses Collection" required />
                     <Form.Control.Feedback type="invalid">
